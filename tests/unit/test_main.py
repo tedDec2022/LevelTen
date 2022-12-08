@@ -25,7 +25,7 @@ test_cases = [
 	{	'input': "LevEl10Rocks",
 		'expected_set_output': {'LevEl10Rocks'},
 		'expected_length': 12,
-		'description': ('Tests case sensitivity, '
+		'description': ('Tests no repeating character and case sensitivity, '
 						'assuming case must match to count as a repeating characters')
 		},
 	{	'input': "LevEl10!!nR0cks",
@@ -42,6 +42,16 @@ test_cases = [
 		'expected_set_output': {' '},
 		'expected_length': 1,
 		'description': 'Tests all spaces'
+		},
+	{	'input': "aabcd12345",
+		'expected_set_output': {'abcd12345'},
+		'expected_length': 9,
+		'description': 'Tests repetition at start of string'
+		},
+	{	'input': "abcd123455",
+		'expected_set_output': {'abcd12345'},
+		'expected_length': 9,
+		'description': 'Tests repetition at end of string'
 		}
 
 ]
