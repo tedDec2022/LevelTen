@@ -10,11 +10,12 @@ The function provides the maximum length of a term without repeating characters,
 Notes:
  - upper and lower case characters are treated as different characters
  - spaces, special characters and numbers (0-9) are treated as valid characters
+ - the prompt identified `defddefstuyt` as having the longest non-repeating term of `defstuyt` at length 8. This seems suspect since that term has two `t`'s in it, so the code assumes the correct output here is `defstuy` at length 7.
 
 
 ### Running the code
 
-The code has been tested in in Python `3.9.0`. Install Python dependencies with:
+The code has been tested in in Python `3.9` and `3.10`. Install Python dependencies with:
 ```
 pip install -r requirements.txt
 ```
